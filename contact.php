@@ -1,6 +1,6 @@
 
 <?php 
-define("TITLE", "Contact | Franklin's fine Dining");
+define("TITLE", "Contact | Company Name");
 include("includes/header.php");
 ?>
 
