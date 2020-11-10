@@ -1,0 +1,290 @@
+/* Global */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #353535;
+	-webkit-font-smoothing: antialiased;
+	background: #EBEBE8;
+	text-align: center;
+
+}
+hr {
+	border: none;
+	height: 18px;
+	width: 114px;
+	background: url('img/hr.png') center center no-repeat;
+	margin: 30px auto;
+}
+
+/* Text */
+h1,h2,h3,h4 {
+	margin: 30px 0;
+	font-weight: 400;
+}
+h1 {
+	font-size: 35px;
+}
+h2,h3 {
+	font-size: 30px;
+	color: #0D6089;
+}
+h3 {
+	font-size: 25px;
+}
+h4 {
+	font-size: 20px;
+}
+p {
+	margin: 0 0 20px;
+	line-height: 30px;
+}
+h2 + p {
+	margin-top: -20px;
+}
+h3.error {
+	color: #faa722;
+}
+small {
+	font-size: 12px;
+}
+sup {
+	font-size: 0.6em;
+}
+
+/* Layout */
+.content {
+	padding: 20px 15% 50px;
+}
+
+#banner img {
+	height: 60vh;
+	width: 75%;
+}
+
+/* Navbar */
+nav {
+	margin: -27px 0 0;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 10px;
+}
+#navbar a {
+	display: block;
+	background: #353535;
+	outline: solid 2px #353535;
+	border: solid 2px white;
+	color: white;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+#navbar a:hover {
+	outline: solid 2px #0D6089;
+	background: #0D6089;
+}
+
+/* Footer */
+footer {
+	font-size: 12px;
+	line-height: 22px;
+	margin: 60px 0 0 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+footer strong {
+	display: block;
+	margin: 0 0 20px;
+}
+
+/* Home */
+#intro {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+/* Team */
+#team-members {
+	padding: 0 50px 30px;
+}
+.team {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	grid-gap: 30px;
+}
+.member img {
+	width: 90%;
+}
+
+/* Menu */
+#menu-items ul {
+	list-style: none;
+	padding: 20px 0;
+	font-size: 18px;
+}
+#menu-items ul li {
+	margin: 20px 0;
+}
+
+#menu-items ul li a {
+	text-decoration: none;
+	font-weight: bold;
+}
+.price {
+	color: #353535;
+	font-weight: 400;
+}
+#dish {
+	padding: 0 20% 20px;
+}
+
+a:link, a:visited {
+	color: #0D6089;
+}
+a:hover {
+	color: #0CA6E0;
+}
+
+/* Contact */
+#contact-form {
+	margin: 0 auto;
+}
+#contact {
+	margin: 0 auto;
+}
+
+#contact-form label {
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+	border: solid 2px #353535;
+	font-size: 18px;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 300px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #F7F7F7;
+}
+
+#contact-form textarea {
+	resize: vertical;
+	height: 120px;
+}
+
+/* Buttons */
+a.button, input.button { /* Dish.php's return button and contact.php's send button */
+	display: inline-block;
+	background: #ccc;
+	outline: solid 2px #ccc;
+	border: solid 2px white;
+	color: white;
+	padding: 10px 15px;
+	margin: 20px 0;
+	text-decoration: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #bbb;
+	outline-color: #bbb;
+}
+
+input.button.next {
+	background: #0D6089;
+	outline: solid 2px #0D6089;
+}
+
+.button.next:hover, input.button.next:hover {
+	background: #0CA6E0;
+	outline: solid 2px #0CA6E0;
+}
+
+input.button.next {
+	width: 330px;
+	display: block;
+	margin: 20px auto;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+	h1 {
+		line-height: 2.4rem;
+	}
+	#banner img {
+		width: 90%;
+	}
+	#dish {
+		padding: 0 10% 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	#banner img {
+		width: 100%;
+		height: 45vh;
+	}
+	#team-members {
+		padding: 0 0 30px;
+	}
+	#dish {
+		padding: 0 0 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.content {
+		padding: 20px 10% 50px;
+	}
+	h1 {
+		line-height: 3.4rem;
+	}
+	
+	/* Navbar */
+	nav ul li{
+		margin: 0 7px;
+	}
+	
+	/* Menu */
+	#dish {
+		padding: 0 0 20px;
+	}
+
+	/* Contact */
+	#contact-form input[type="text"],
+	#contact-form input[type="email"],
+	#contact-form textarea {
+		width: 270px;
+	}
+	input.button.next {
+		width: 300px;
+	}
+	
+	
+	/* Footer */
+	footer {
+		display: block;
+	}
+	footer strong {
+		margin: 30px 0 0;
+	}
+}
+@media (min-width: 1440px) {
+	.team {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
