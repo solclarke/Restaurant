@@ -60,7 +60,7 @@ include("includes/header.php");
     ?>
 
     <!-- Show success message after sending email -->
-    <h4>Thanks for contacting Franklin's!</h4>
+    <h4>Thanks for contacting Company Name!</h4>
     <p>Please allow 24 hours for a response</p>
     <p><a href="index.php" class="button">&laquo; Go to Home Page</a></p>
 
