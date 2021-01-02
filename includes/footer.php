@@ -27,6 +27,7 @@
         </footer> <!-- end of footer -->
 
         <small>&copy; <?php echo date("Y"), $company_name; ?> </small>
+        <small><a href="https://solclarke.github.io/Profile/" target="_blank" rel="noopener noreferrer">Made by Sol Clarke</a></small>
 
     </div> <!-- end of content (header) -->
 
